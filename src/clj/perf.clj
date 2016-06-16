@@ -32,15 +32,15 @@
   (start-uto)
   (start-hk))
 
+(defn stop-all []
+  (stop  {:host "localhost" :port 8082 :path "/"})
+  (stop-uto)
+  (stop-hk))
+
 (comment
   (run app  {:host "localhost" :port 8082 :path "/"})
 
   (start-all)
-
-  (stop  {:host "localhost" :port 8082 :path "/"})
-
-  (stop-uto)
-
-  (stop-hk))
+  )
 
 
