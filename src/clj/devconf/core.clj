@@ -46,7 +46,7 @@
 
 (defn on-message [raw-msg]
   (let [msg (fmt/from-transit raw-msg)
-        msg (assoc msg :result "TODO")]
+        msg (assoc msg :result (do-eval (:message msg)))]
     (println "message " msg)
     (broad-cast msg)))
 

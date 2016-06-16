@@ -24,7 +24,7 @@
 
 (type #{1 2 3})
 
-(comment Syntax)
+(comment LISP Syntax)
 
 (comment
 
